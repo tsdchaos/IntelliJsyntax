@@ -1,0 +1,11 @@
+Constructors:
+a special block of code that helps us build/construct (giving initial values to the fields) the object
+When we write new ClassName(), this executes the constructor
+When we do not write a constructor, then the compiler will automatically create a default constructor
+If there are multiple constructors in a class, then java will check for the number, type, and sequence of the parameters
+
+Rules:
+1.Constructors have same name as the class name
+2. Dont have return types, not even "void"
+3. We can use the "this" keyword with parentheses to invoke the other constructors of the same class
+4. We can use the "this" keyword to differentiate local and instance variables.
