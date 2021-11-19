@@ -1,0 +1,46 @@
+Inheritance:
+is a mechanism in which one class aquires all the properties and behaviors/methods of the parent class
+Except private members  (fields/methods) and constructors
+Benefits:
+1) Saves time to code
+2) uses less memory
+3) Execution time is less
+4) code duplication is reduced
+Disadvantages:
+1) In inheritance base class and child class, both are tightly coupled. Hence if you change the code of the parent
+class, it will affect all the chiled classes.
+
+Types of Inheritance:
+There are four major types of inheritance which are supported in most OOP languages, but java only supports 3 types with
+class
+1) single, hierarchical, multilevel, multiple (not supported by classes in java
+A) Single Inheritance: If we only have one parent and one child class, it is called single inheritance
+    EXAMPLE:
+    public class Parent{}
+    public class Child extends Parent{}
+
+B) Hierarchical Inheritance: If we only have one parent, but multiple children classes, it is called Hierarchical
+Inheritance
+    EXAMPLE:
+    public class Parent{}
+    public class Child1 extends Parent{}
+    public class Child2 extends Parent{}
+    public class Child3 extends Parent{}
+
+C)Multilevel:  a class extends from another class that is already extended from another class
+    EXAMPLE:
+    public class GrandParent{}
+    public class Parent extends GrandParent{}
+    public class Child extends Parent{}
+D) Multiple (not supported by java classes): One child, multiple parents
+    EXAMPLE:
+    public class Parent1{}
+    public class Parent2{}
+    public class Child extends Parent1, Parent2{}
+
+DIAMOND PROBLEM:
+    public class Parent1{
+    void print name(){}
+    }
+    public class Parent2{}
+    public class Child extends Parent1, Parent2{}

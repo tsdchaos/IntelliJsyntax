@@ -7,3 +7,9 @@ public class Task2ClassB extends Task2ClassA{
 
     }
 }
+
+//public class Task2{
+  //  public static void main(String[] args) {
+//        Task2ClassB.printF();
+ //   }
+//}
