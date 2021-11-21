@@ -1,0 +1,16 @@
+Overloading:
+- methods have the same name, but different parameters (number, type, order)
+- When methods with the same name exist in a class multiple times with different number of parameters or different sequence
+of parameters or different data types, then it is called overloading the method or method overloading
+- Allows for cleaner code, easier to read code
+- Allows for more flexible code
+
+Rules:
+    - Access modifiers (public, private, default, protected) do not play any role in method overloading
+    - Non-access modifiers (static, final) also do not play any role in method overloading
+    - Method return types (int, String, boolean, etc) also do not play any roles in method overloading
+    - We can't overload a method by just changing the return type
+    - Method names must be the same if we want to overload a method
+    - parameters should be different for each method either in number, sequence, or data type
+    - We can overload constructors as well, in much the same way
+    -
