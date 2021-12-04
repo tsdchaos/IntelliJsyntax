@@ -1,0 +1,13 @@
+Abstraction is a process that hides implementation details and showing only functionality to the user
+Abstract classes:
+1) Abstract classes in java are classes with the abstract keyword.
+2) We use abstract classes when we are sure about the method header, but not sure about the implementation.
+3) We can declare a class as abstract class without having any abstract methods inside it
+4) Once we have at least one abstract method, we must declare that class as abstract.
+5) We can have non-abstract methods as well inside the abstract class.
+6) We need a child class to provide implementation of the abstract methods
+7) The child class can provide the implementation of all the methods or it can leave some methods unimplemented
+8) We can't have a class or method "final" and "abstract" at the same time.
+9) We can't use abstract keyword with fields and constructors
+10) Abstract methods dont have body in the parent class.
+11) Abstract is a non access modifier.

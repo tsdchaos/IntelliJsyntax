@@ -5,7 +5,7 @@ loops to call all the methods from all the classes
 3) We cannot store/cast a Parent class object to the Child class. But if parent type variable
 
 Final Keyword:
-If we write final with a variable we can not change its valuer. Either we should initialize it right away, or through the constructor.
+If we write final with a variable we can not change its value. Either we should initialize it right away, or through the constructor.
 It is best practice to type all final variables or classes in all caps
 When used with method, we can't override that method in a child class
 When used with class, you cant extend that class from another class
