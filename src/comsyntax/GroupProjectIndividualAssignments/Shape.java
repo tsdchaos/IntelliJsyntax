@@ -8,23 +8,20 @@ public interface Shape {
 }
 class Circle implements Shape{
     double radius;
-    final double pi=3.14;
     double perimeter;
     double area;
     Circle(double radius){
         this.radius=radius;
-        calculateArea();
-        calculatePerimeter();
     }
     @Override
     public void calculateArea() {
-        area=radius*radius*pi;
+        area=radius*radius*(Math.PI);
         System.out.println("The area of the circle is: "+area);
     }
 
     @Override
     public void calculatePerimeter() {
-        perimeter=radius*2*pi;
+        perimeter=radius*2*(Math.PI);
         System.out.println("Perimeter of the circle is: "+perimeter);
     }
 }
@@ -35,8 +32,6 @@ class Square implements Shape{
 
     Square(double side){
         this.side=side;
-        calculateArea();
-        calculatePerimeter();
     }
     @Override
     public void calculatePerimeter() {
@@ -52,7 +47,10 @@ class Square implements Shape{
 }
 class ShapeTester{
     public static void main(String[] args) {
-        Shape square=new Square(5.7);
-        Shape circle=new Circle(6.7);
+        Shape[] shapes={new Circle(5.7), new Square(6.7)};
+        for(Shape s:shapes){
+            s.calculateArea();
+            s.calculatePerimeter();
+        }
     }
 }
