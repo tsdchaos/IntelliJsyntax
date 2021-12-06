@@ -1,0 +1,31 @@
+Wrapper Classes:
+    Wrapper classes are object classes around primitive datatypes that have built in methods,
+    and are used as objects where necessary. For example, in collections framework
+    Wrapper classes provides us a mechanism to use primitive data types as objects
+
+Boxing
+    The automatic conversion of primitive data types into its equivalent Wrapper, is called Boxing
+    For example,
+    Integer i=new Integer(10); //boxing
+
+AutoBoxing
+    The automatic converseion of primitive data types into its equivalent Wrapper is called autoboxing
+    Integer i=10;
+
+Unboxing:
+    The conversion of equivalent Wrapper to primitive data types is called Unboxing
+    Integer i=new Integer(10);
+    int i2=i.valueOf();
+
+AutoUnboxing:
+    The conversion of equivalent Wrapper to primitive data types is called Unboxing
+    Integer i=10; //autoboxing
+    int i2=i; //auto unboxing
+
+Collection Framework
+    Collection provides architecture to store and manipulate the group of
+    objects that are represented as a single unit
+    We have many interfaces and classes inside the framework to achieve this.
+    ArrayList
+    <> diamond operator is used to specify the data type in collections framework.
+    ArrayList<Double> numbers=new ArrayList<>();
