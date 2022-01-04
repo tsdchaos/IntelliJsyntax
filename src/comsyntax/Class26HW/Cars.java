@@ -12,14 +12,24 @@ public class Cars {
         cars.add("Ford Fiesta");
         System.out.println("Display first way (println)");
         System.out.println(cars);
-        Iterator<String> iterator= cars.iterator();
+
         System.out.println("Display using second way (Iterator)");
-        System.out.print(iterator.next()+", ");
-        System.out.print(iterator.next()+", ");
-        System.out.println(iterator.next());
-        System.out.println("Display using third way (for: each loop");
+        int j=0;
+        while(j<cars.size()){
+            System.out.println(cars.get(j));
+            j++;
+        }
+        Iterator<String> iterator= cars.iterator();
+        while(iterator.hasNext()) {
+            System.out.print(iterator.next() + ", ");
+        }
+        System.out.println("Display using third way (for: each loop)");
         for(String car: cars){
             System.out.print(car+", ");
+        }
+        System.out.println();
+        for (int i = 0; i < cars.size(); i++) {
+            System.out.println(cars.get(i)+" has "+cars.get(i).length()+" characters.");
         }
     }
 }

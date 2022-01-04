@@ -12,6 +12,7 @@ public class SetDemo2 {
         hashSet.add("Apples");
         hashSet.add("Apples");
         System.out.println(hashSet);
+
         //Look Up LinkedHashSet later
         //LinkedHashSet, class that implements Set
         //interface. It does not allow duplicates and

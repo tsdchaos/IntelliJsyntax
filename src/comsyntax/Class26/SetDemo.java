@@ -12,6 +12,7 @@ public class SetDemo {
         hashSet.add("Apples");
         hashSet.add("Apples");
         System.out.println(hashSet);
+
         //HashSet does not allow duplicate elements
         LinkedList<String> hashSet1=new LinkedList<>();
         hashSet1.add("Apples");

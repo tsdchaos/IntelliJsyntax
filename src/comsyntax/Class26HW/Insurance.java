@@ -12,6 +12,7 @@ public abstract class Insurance {
     String insuranceName;
 
     public Insurance(String insuranceName) {
+        this.insuranceName=insuranceName;
     }
 
     abstract void getQoute();
@@ -22,7 +23,6 @@ class Car extends Insurance{
     public Car(String insuranceName, String carModel){
         super(insuranceName);
         this.carModel=carModel;
-        this.insuranceName=insuranceName;
     }
     @Override
     void getQoute() {
@@ -39,7 +39,6 @@ class Pet extends Insurance{
     public Pet(String insuranceName, String petType) {
         super(insuranceName);
         this.petType=petType;
-        this.insuranceName=insuranceName;
     }
 
     @Override

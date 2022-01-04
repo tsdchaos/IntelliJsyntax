@@ -1,0 +1,37 @@
+Maps:
+Maps are data structures that can store the data in the form of key value pairs
+
+There are three famous types of maps in Java:
+1) HashMap
+    - Insertion order is not preserved
+    - Good for when we need good performance and we don't care about the order of the data
+2) LinkedHashMap
+    - Insertion order is maintained
+    - Slower in performance than a hashmap when it is comes to retrieving the data
+    - Better insertion speed than treeMaps
+3) TreeMap
+    - Store the data in sorted form
+    - Insertion is slow. Retrieval is fast
+    - Insertion is slow because TreeMap has to compare the data with existing elements
+
+================================
+To read the data from a file, we must have the following:
+    1) Path(Location) of that file on our computer
+    2) Appropriate program must be installed on the computer to read the data from that file
+        - For example: For .xlsx, we must use Microsoft Excel or a similar program
+        - For .pdf files, we can use Adobe Reader
+        - For .txt we can use Notepad
+    3) We must also know a little bit about the structre of that file. For example, in excel files, data is stored in the
+    form of workbooks. Inside workbooks, we have sheets. Inside sheets, we have rows, and columns, or cells
+
+Why we should learn about File Handling in Java:
+- We store sensitive data in files instead of code so that no one can access that data
+- We write the code inside Java programs to read that info at run time from some kind of file
+perform the test, and once testing is done we delete those files
+- When we have to test web forms, we don't put all the testing data inside the code. We create files, for the data to read
+the data from thoise files and test those web forms
+
+==================
+How to create properties file in intellij
+Right click on project->click new-> DIrectory
+Once directory is there, right click again and click new file. Givve it an extension of .properties

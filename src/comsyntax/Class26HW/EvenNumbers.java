@@ -13,13 +13,7 @@ public class EvenNumbers {
             }
         }
 
-        Iterator<Integer> iterator= even.iterator();
-        while(iterator.hasNext()){
-            int element=iterator.next();
-            if(element%5==0){
-                iterator.remove();
-            }
-        }
+        even.removeIf(element -> element % 5 == 0);
         System.out.println(even);
     }
 }
